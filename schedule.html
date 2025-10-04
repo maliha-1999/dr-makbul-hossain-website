@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/ome.css">
   <link rel="stylesheet" href="assets/ipti.css">
   <link rel="stylesheet" href="assets/maliha.css">
-
 </head>
-<body>
+<body class="schedule-page">
 
-
-  
-<!-- Header -->
+  <!-- Header -->
   <header>
     <h1><a href="index.html">Dr. Md Makbul Hossain</a></h1>
 
@@ -59,17 +56,19 @@
       <p><span class="highlight"><img src="./assets/whatsapp2.png" alt="whatsapp"></span> 01782-662 665</p>
       <p><span class="highlight"><img src="./assets/email.png" alt="email"></span> drmmhmukul@gmail.com</p>
     </div>
-    
- <!-- Where footer will appear -->
-<div id="footer"></div>
 
-<!-- Load footer.html -->
-<script>
-  fetch("footer.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("footer").innerHTML = data;
-    });
-</script>
-  </body>
-  </html>
+  </div> <!-- End of container -->
+
+  <!-- Footer OUTSIDE the container -->
+  <div id="footer"></div>
+
+  <!-- Load footer.html -->
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+</body>
+</html>
