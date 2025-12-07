@@ -1,87 +1,27 @@
-/* =====================================================
-   RESPONSIVE NAVIGATION & INTERACTIONS
-===================================================== */
-
 document.addEventListener("DOMContentLoaded", () => {
-
-  /* ========================
-     1. Create Hamburger Menu
-  ======================== */
-  const nav = document.querySelector("header nav");
-  const header = document.querySelector("header");
-  const menuBtn = document.createElement("div");
-  menuBtn.classList.add("hamburger");
-  menuBtn.innerHTML = "&#9776;"; // Hamburger icon
-  header.appendChild(menuBtn);
-
-  // Toggle nav visibility on click
-  menuBtn.addEventListener("click", () => {
-    nav.classList.toggle("nav-active");
-  });
-
-  /* ========================
-     2. Highlight Current Page
-  ======================== */
+  /* Highlight current page */
   const currentPage = location.pathname.split("/").pop();
-  document.querySelectorAll("header nav a").forEach(link => {
-    if(link.getAttribute("href") === currentPage) {
-      link.style.color = "#ffcc00"; // Highlight color
-      link.style.fontWeight = "bold";
-    }
+  document.querySelectorAll(".navbar .nav-link").forEach(link => {
+    if (link.getAttribute("href") === currentPage) link.classList.add("active");
   });
 
-  /* ========================
-     3. Smooth Scroll for Anchors (optional)
-  ======================== */
+  /* Smooth scroll for anchors */
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function(e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute("href")).scrollIntoView({
-        behavior: "smooth"
-      });
+    anchor.addEventListener("click", e => {
+      const targetId = anchor.getAttribute("href");
+      if (targetId.length > 1) {
+        e.preventDefault();
+        document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
+      }
     });
   });
 
+  /* Navbar shadow on scroll */
+  window.addEventListener("scroll", () => {
+    const navbar = document.getElementById("navbar");
+    if (navbar) {
+      if (window.scrollY > 60) navbar.classList.add("shadow-sm");
+      else navbar.classList.remove("shadow-sm");
+    }
+  });
 });
-
-/* ========================
-   OPTIONAL: Add CSS for hamburger in JS dynamically
-======================== */
-const style = document.createElement("style");
-style.innerHTML = `
-  .hamburger {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    color: white;
-    user-select: none;
-  }
-
-  header nav.nav-active {
-    display: block !important;
-  }
-
-  @media (max-width: 768px) {
-    header nav {
-      display: none;
-      flex-direction: column;
-      background-color: #0b0b64;
-      position: absolute;
-      top: 65px;
-      right: 0;
-      width: 200px;
-      border-radius: 0 0 10px 10px;
-      padding: 10px 0;
-    }
-
-    header nav a {
-      margin: 10px 20px;
-      display: block;
-    }
-
-    .hamburger {
-      display: block;
-    }
-  }
-`;
-document.head.appendChild(style);
