@@ -112,9 +112,4 @@ To run this project locally:
 
 ---
 
-## 👩‍💻 Author
 
-**Mst. Maliha Mobassira**
-CSE Undergraduate | Aspiring Web Developer
-
----
