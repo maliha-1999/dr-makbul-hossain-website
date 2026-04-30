@@ -112,4 +112,10 @@ To run this project locally:
 
 ---
 
+## 🎥 Demo
+
+Click below to watch the project demo:
+
+👉 [Watch Video](https://drive.google.com/file/d/1Y5OaofyW-1OeafHFvzia83J8PgIxOZdV/view?usp=sharing)
+
 
