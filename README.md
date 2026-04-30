@@ -6,7 +6,7 @@ A responsive and user-friendly personal website designed to showcase the profess
 
 ## 🌐 Live Preview
 
-👉 *(Add GitHub Pages link here after deployment)*
+👉 *https://anjum-sadia.github.io/Dr-Makbul-s-Portfolio/*
 
 ---
 
@@ -109,14 +109,6 @@ To run this project locally:
 * Add animations and interactive UI elements
 * Deploy with a custom domain
 
----
-
-
-## 📞 Contact Information
-
-* 📍 Nasirnagar Modern Hospital, Brahmanbaria
-* 📱 01782-662665
-* 📧 [drmmhmukul@gmail.com](mailto:drmmhmukul@gmail.com)
 
 ---
 
