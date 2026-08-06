@@ -5,106 +5,147 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Schedule - Dr. Md Makbul Hossain</title>
 
-  <!-- Bootstrap + Icons -->
+  <!-- Bootstrap 5 & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Custom CSS -->
+  <!-- Custom Stylesheets -->
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/ome.css">
-  <link rel="stylesheet" href="assets/ipti.css">
   <link rel="stylesheet" href="assets/maliha.css">
 </head>
 
 <body class="schedule-page">
 
-<!-- Top Bar -->
-<div id="top-bar" class="d-none d-md-block">
-  <div class="container d-flex align-items-center justify-content-between flex-wrap">
-    <div class="d-flex align-items-center gap-4 flex-wrap">
-      <a href="tel:+8801782662665" class="top-link">
-        <i class="bi bi-telephone-fill me-2"></i>01782-662 665
-      </a>
-      <span class="divider">|</span>
-      <a href="mailto:drmmhmukul@gmail.com" class="top-link">
-        <i class="bi bi-envelope-fill me-2"></i>drmmhmukul@gmail.com
-      </a>
-    </div>
-    <div class="d-flex align-items-center gap-2">
-      <i class="bi bi-geo-alt-fill"></i>
-      <span>Nasirnagar Modern Hospital, Brahmanbaria</span>
-    </div>
-  </div>
-</div>
-
-<!-- Navbar -->
-<nav id="navbar" class="navbar navbar-expand-lg bg-white sticky-top">
-  <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="index.html">
-      <i class="bi bi-heart-pulse-fill text-primary me-2"></i>
-      <span>Dr. Md Makbul Hossain</span>
-    </a>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarNav" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto align-items-lg-center">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-        <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
-        <li class="nav-item ms-lg-2">
-          <a class="btn btn-primary nav-cta" href="contact.html">Contact</a>
-        </li>
-      </ul>
+  <!-- Top Bar -->
+  <div id="top-bar" class="d-none d-md-block">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap">
+      <div class="d-flex align-items-center gap-4 flex-wrap">
+        <a href="tel:+8801782662665" class="top-link">
+          <i class="bi bi-telephone-fill me-2"></i>01782-662 665
+        </a>
+        <span class="divider">|</span>
+        <a href="mailto:drmmhmukul@gmail.com" class="top-link">
+          <i class="bi bi-envelope-fill me-2"></i>drmmhmukul@gmail.com
+        </a>
+      </div>
+      <div class="d-flex align-items-center gap-2">
+        <i class="bi bi-geo-alt-fill"></i>
+        <span>Nasirnagar Modern Hospital, Brahmanbaria</span>
+      </div>
     </div>
   </div>
-</nav>
 
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar navbar-expand-lg bg-white sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="bi bi-heart-pulse-fill me-2"></i>
+        <span>Dr. Md Makbul Hossain</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary nav-cta" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- Schedule Section -->
-  <section class="py-5">
-    <div class="container animate__animated animate__fadeIn">
+  <section class="py-5 bg-light">
+    <div class="container">
       
       <!-- Doctor Info -->
-      <div class="doctor-info d-flex flex-wrap align-items-center justify-content-between mb-5">
-        <div class="doctor-details mb-4 mb-md-0">
+      <div class="doctor-info d-flex flex-wrap align-items-center justify-content-between mb-5 reveal-scale">
+        <div class="doctor-details mb-4 mb-md-0 col-lg-7">
           <h2 class="text-primary fw-bold mb-3">Child Disease Specialist</h2>
-          <p>
-            Serving at Evercare Hospital, Dhaka <br>
-            Specialist in Pediatric Cardiology, Neonatology, and Child Health.
+          <p class="lead text-muted mb-0">
+            Serving as Consultant Pediatric Cardiologist at Evercare Hospital, Dhaka.<br>
+            Dedicated expert in Pediatric Cardiology, Neonatology, and comprehensive child health treatments.
           </p>
         </div>
-        <img src="./image/dr2.jpg" alt="Dr. Md Makbul Hossain" class="rounded shadow-lg img-fluid" style="max-width:220px;">
+        <div class="col-lg-4 text-center mt-3 mt-lg-0">
+          <img src="./image/dr2.jpg" alt="Dr. Md Makbul Hossain" class="rounded shadow-lg img-fluid border" style="max-width:240px; border-color: var(--secondary-color) !important; border-width: 3px !important; border-style: solid !important;">
+        </div>
       </div>
 
-      <!-- Chamber Schedule -->
-      <div class="schedule p-4 rounded shadow-sm mb-4">
-        <h3 class="text-primary fw-bold mb-3"><i class="bi bi-clock-history me-2"></i>Chamber Schedule</h3>
-        <p><span class="highlight">Saturday – Thursday:</span> 2:30 PM – 8:00 PM</p>
-        <p><span class="highlight">Friday:</span> 9:00 AM – 8:00 PM</p>
-      </div>
+      <div class="row g-4">
+        <!-- Chamber Schedule -->
+        <div class="col-md-6 reveal-left">
+          <div class="schedule p-4 h-100">
+            <h3 class="text-primary fw-bold mb-4"><i class="bi bi-clock-history me-3 text-warning"></i>Chamber Hours</h3>
+            <div class="mb-3">
+              <span class="highlight d-block text-uppercase small text-muted">Saturday – Thursday</span>
+              <p class="fs-5 fw-bold mb-0">2:30 PM – 8:00 PM</p>
+            </div>
+            <div>
+              <span class="highlight d-block text-uppercase small text-muted">Friday</span>
+              <p class="fs-5 fw-bold mb-0">9:00 AM – 8:00 PM</p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Chamber Location -->
-      <div class="schedule p-4 rounded shadow-sm mb-4">
-        <h3 class="text-primary fw-bold mb-3"><i class="bi bi-geo-alt-fill me-2"></i>Chamber Address</h3>
-        <p><strong>Nasirnagar Modern Hospital</strong><br>
-          2nd Floor, Room No: 211 <br>
-          Nasirnagar Sadar, Brahmanbaria
-        </p>
-      </div>
+        <!-- Chamber Location -->
+        <div class="col-md-6 reveal-right">
+          <div class="schedule p-4 h-100">
+            <h3 class="text-primary fw-bold mb-4"><i class="bi bi-geo-alt-fill me-3 text-warning"></i>Chamber Address</h3>
+            <h5 class="fw-bold mb-2">Nasirnagar Modern Hospital</h5>
+            <p class="text-muted">
+              2nd Floor, Room No: 211<br>
+              Bachchalla, Hospital Road, Nasirnagar Sadar,<br>
+              Brahmanbaria
+            </p>
+          </div>
+        </div>
 
-      <!-- Contact -->
-      <div class="contact p-4 rounded shadow-sm">
-        <h3 class="text-primary fw-bold mb-3"><i class="bi bi-person-lines-fill me-2"></i>For Serial / Appointment</h3>
-        <p><i class="bi bi-telephone-fill me-2"></i><strong>01782-662 665</strong></p>
-        <p><i class="bi bi-whatsapp me-2"></i><a href="https://wa.me/8801782662665" target="_blank">01782-662 665</a></p>
-        <p><i class="bi bi-envelope-fill me-2"></i><a href="mailto:drmmhmukul@gmail.com">drmmhmukul@gmail.com</a></p>
+        <!-- Contact Info for Serial -->
+        <div class="col-12 reveal">
+          <div class="contact p-4 mt-2">
+            <h3 class="text-primary fw-bold mb-4"><i class="bi bi-person-lines-fill me-3 text-warning"></i>Book Consultation Serial</h3>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-telephone-fill text-warning fs-3 me-3"></i>
+                  <div>
+                    <span class="d-block text-muted small text-uppercase">Phone Call</span>
+                    <a href="tel:+8801782662665" class="fw-bold text-dark fs-5">01782-662 665</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-whatsapp text-success fs-3 me-3"></i>
+                  <div>
+                    <span class="d-block text-muted small text-uppercase">WhatsApp Chat</span>
+                    <a href="https://wa.me/8801782662665" target="_blank" class="fw-bold text-dark fs-5">01782-662 665</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-envelope-fill text-warning fs-3 me-3"></i>
+                  <div>
+                    <span class="d-block text-muted small text-uppercase">Email Support</span>
+                    <a href="mailto:drmmhmukul@gmail.com" class="fw-bold text-dark fs-5">drmmhmukul@gmail.com</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -113,6 +154,7 @@
   <footer>
     <div class="container">
       <div class="row gy-4">
+        <!-- Col 1 -->
         <div class="col-lg-5 col-md-12">
           <h5>Dr. Md Makbul Hossain</h5>
           <p>
@@ -121,33 +163,36 @@
           <div class="social-icons mt-3">
             <a href="https://www.facebook.com/DrMakbul/" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
             <a href="https://wa.me/8801782662665" target="_blank" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:drmmhmukul@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
           </div>
         </div>
 
+        <!-- Col 2 -->
         <div class="col-lg-3 col-md-6">
           <h5>Quick Links</h5>
           <ul class="list-unstyled">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li class="mb-2"><a href="index.html">Home</a></li>
+            <li class="mb-2"><a href="about.html">About Me</a></li>
+            <li class="mb-2"><a href="service.html">Services</a></li>
+            <li class="mb-2"><a href="gallery.html">Gallery & Charity</a></li>
+            <li class="mb-2"><a href="schedule.html">Schedule</a></li>
           </ul>
         </div>
 
+        <!-- Col 3 -->
         <div class="col-lg-4 col-md-6">
           <h5>Contact & Location</h5>
           <ul class="list-unstyled">
-            <li class="d-flex">
-              <i class="bi bi-geo-alt-fill me-3 mt-1"></i>
+            <li class="d-flex mb-3">
+              <i class="bi bi-geo-alt-fill me-3 text-warning"></i>
               <span><strong>Nasirnagar Modern Hospital</strong><br>Bachchalla, Hospital Road, Nasirnagar Sadar, Brahmanbaria</span>
             </li>
-            <li class="d-flex">
-              <i class="bi bi-telephone-fill me-3 mt-1"></i>
+            <li class="d-flex mb-3">
+              <i class="bi bi-telephone-fill me-3 text-warning"></i>
               <a href="tel:+8801782662665">01782-662 665</a>
             </li>
             <li class="d-flex">
-              <i class="bi bi-envelope-fill me-3 mt-1"></i>
+              <i class="bi bi-envelope-fill me-3 text-warning"></i>
               <a href="mailto:drmmhmukul@gmail.com">drmmhmukul@gmail.com</a>
             </li>
           </ul>
@@ -156,13 +201,16 @@
     </div>
 
     <div class="footer-bottom">
-      <div class="container">
-        <p class="mb-0">&copy; 2025 Dr. Md Makbul Hossain | All Rights Reserved.</p>
+      <div class="container text-center">
+        <p class="mb-0">&copy; 2026 Dr. Md Makbul Hossain | All Rights Reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
+  <!-- Bootstrap Bundle JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom Scroll Reveal & Theme Interactions -->
+  <script src="assets/maliha.js"></script>
 </body>
 </html>
